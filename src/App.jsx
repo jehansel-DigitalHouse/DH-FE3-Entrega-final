@@ -1,15 +1,31 @@
+// IMPORTs
+// React
+import { Routes, Route } from "react-router-dom";
 
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
+// Ruta padre
+import Layout from "./Layouts/Layout";
 
+// Rutas hijas
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import Detail from "./Pages/Detail";
+import Favs from "./Pages/Favs";
 
 function App() {
-  return (
-      <div className="App">
-          <Navbar/>
-          <Footer/>
-      </div>
-  );
+	return (
+		// <>
+		<Routes>
+			{/* Padre de las rutas anidadas */}
+			<Route path="/" element={<Layout />}>
+				{/* Rutas anidadas hijas */}
+				<Route path="/" element={<Home />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/dentist/:id" element={<Detail />} />
+				<Route path="/favs" element={<Favs />} />
+			</Route>
+		</Routes>
+		// </>
+	);
 }
 
 export default App;
