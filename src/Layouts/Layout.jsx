@@ -10,7 +10,9 @@ const Layout = () => {
 		<div className="body">
 			{/* Renderiza tanto el(los) componente(s) (Navbar y Footer) como la ruta (Oulet) */}
 			<Navbar />
-			<Outlet />
+			<div className="outlet">
+				<Outlet />
+			</div>
 			<Footer />
 		</div>
 	);
