@@ -7,12 +7,10 @@ import Footer from "../Components/Footer";
 
 const Layout = () => {
 	return (
-		<div className="body">
+		<div className="">
 			{/* Renderiza tanto el(los) componente(s) (Navbar y Footer) como la ruta (Oulet) */}
 			<Navbar />
-			<div className="outlet">
-				<Outlet />
-			</div>
+			<Outlet />
 			<Footer />
 		</div>
 	);

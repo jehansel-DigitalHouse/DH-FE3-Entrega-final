@@ -16,6 +16,10 @@ export const reducer = (state, action) => {
 			return { ...state, favs: filterFavs };
 		case "TOGGLE_THEME":
 			console.log("TOGGLE_THEME");
-			return { ...state, theme: "" };
+			// Cambia el tema de light a dark
+			return {
+				...state,
+				theme: state.theme === "light" ? "dark" : "light",
+			};
 	}
 };

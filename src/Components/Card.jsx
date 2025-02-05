@@ -8,7 +8,7 @@ const Card = ({ dentist }) => {
 
 	const {
 		dispatch,
-		state: { favs },
+		// state: { favs },
 	} = useContextGlobal();
 
 	const addFav = () => {

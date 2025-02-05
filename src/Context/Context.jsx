@@ -15,7 +15,7 @@ import { reducer } from "../Reducers/reducer";
 const initialState = {
 	dentists: [],
 	favs: lsFavs,
-	theme: "",
+	theme: "light",
 };
 // ============== useReducer fin ==============
 
